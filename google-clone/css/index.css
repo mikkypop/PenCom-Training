@@ -84,7 +84,7 @@ nav .right-section img {
 }
 
 main {
-    background-color: brown;
+   /* background-color: brown; */
     margin-top: 40px;
     text-align: center;
 }
@@ -107,5 +107,102 @@ main .main-input {
 
 /* styling the input container   */
 main .input-container {
+width: 525px;
+border-radius: 100px;
+border: 1px solid rgb(161, 160, 160);
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+main .main-input .input-container input {
+    border-radius: 40%;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+
+/* pseudo class/selector. it is preceded by semicolon */
+
+main .input-container:hover {
+    box-shadow: 0 1px 6px rgb(20, 18, 18);
+    border-color: beige;
+}
+
+main .input-container .search-icon {
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    width:18px;
+    height: 18px;
+    background-position: center;
+    background-size: contain;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+main .main-input .microphone-icon {
+    background-image: url("../img/mic.png");
+    background-repeat: no-repeat;
+    width:18px;
+    height: 18px;
+    background-position: center;
+    background-size: contain;
+    padding-right: 3rem;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block;
+} 
+
+main .main-buttons div button {
+    height: 36px;
+    width: 100%;
+    background-color: aliceblue;
+    border: none;
+    font-size: 14px;
+    color: rgb(161, 160, 160);
+    border-radius: 5px;
+    padding: 0 16px
+}
+
+main .main-buttons div button:hover {
+    border: 1px solid rgb(161, 160, 160);
+    color: black;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    background-color: #f2f2f2;
+    border-top: -2rem solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer ul {
+    display: flex;
+    margin: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer .footer-left-side {
+    justify-self: left;
+}
+
+footer .footer-right-side {
+    justify-self: right;
 }
