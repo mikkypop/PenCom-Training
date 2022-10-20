@@ -155,6 +155,8 @@ main .main-buttons {
     width: 530px;
     margin: 0 auto;
 }
+
+/* display in-line block to display buttons horizontally */
 main .main-buttons div {
     display: inline-block;
 } 
