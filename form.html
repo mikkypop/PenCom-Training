@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <!-- Forms are used to store data. Also used for Projects -->
+    <p> This is a form</p>
+    <form action="" method="post">
+        <label>Username</label><br />
+        <input
+            type="text" 
+            name="username"
+            placeholder="Enter your Username"
+            required="required"
+
+        /><br />
+
+        <label>Email</label><br />
+        <input
+            type="email" 
+            name="email"
+            placeholder="Enter your Email"
+            required="required"
+
+        /><br />
+
+        <label>Password</label><br />
+        <input
+            type="password" 
+            name="password"
+            placeholder="Enter your Password"
+            required="required"
+        /><br />
+
+        <!-- The <select> tag used to create a dropdown of options -->
+        
+        <label>Select your account type</label>
+        <select>
+            <option>Premium</option>
+            <option>Gold</option>
+            <option>Silver</option>
+        </select>
+        <br />
+        
+        <label>Choose your gender</label><br />
+        <input type="radio" name="gender" value="Male" id="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" name="gender" value="Female" id="female" />
+        <label for="female">Female</label><br />
+        
+        <!-- Checkboxes -->
+        <p>What means of Transport do you prefer?</p><br />
+        <input type="checkbox" name="vechone" value="Powerbike" id="vechone" />
+        <label for="vechone">Powerbike</label><br />
+        <input type="checkbox" name="vechtwo" value="Porsche" id="vechtwo" />
+        <label for="vechtwo">Porsche</label><br />
+        
+        <!-- Input type datetime-local and range -->
+        <br /><br />
+
+        <input type="submit" value="Sign Up" />
+    </form>
+</body>
+</html>
