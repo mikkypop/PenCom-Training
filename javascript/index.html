@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Introduction to Javascript</title>
+</head>
+<!-- Introduction to Javascript 
+Two ways of adding javacript either 
+externaly from a .js file 
+OR
+internally using the <script> tag
+-->
+<body>
+    <h1>This is my website in Javascript</h1>
+    <!-- ID is preferably used to implement Javascript methods -->
+
+    <p id="subtraction"></p>
+    <script>
+        // The ddocument.write() injects html
+        document.write("<p>Hello World</p>")
+
+        // Display or output methods in Javascript
+
+        /*
+        document.write()
+        innerHTML
+        window.alert
+        console.log()
+        */
+        document.getElementById("subtraction").innerHTML = 10 + 5;
+
+        // The window alert method triggers the browser to open up a model with information
+
+        window.alert("Hello World");
+
+        // console log is usede to display content in the browser console
+        console.log("I like to code in C");
+
+    </script>
+</body>
+</html>

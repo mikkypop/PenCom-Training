@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in Javascript</title>
+</head>
+<body>
+    <!-- Objects in Javascript -->
+
+    <p id="example"></p>
+    <p id="example2"></p>
+
+    
+    <script>
+        const SamsungModel = {
+            type: "Touchscreen",
+            model: "S20",
+            color: "Gray"
+        };
+
+        document.getElementById("example").innerHTML = "The phone is " + SamsungModel.type;
+
+
+        const person = {
+            name: "Mark",
+            skin: "white",
+            age: 30,
+            shoeColor: "black",
+            ugly: true
+        };
+
+        document.getElementById("example2").innerHTML = person.name + " is " + person.skin + " in complexion";
+
+    </script>
+</body>
+</html>

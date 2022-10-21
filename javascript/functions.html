@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <p>These are functions in Javascript</p>
+    <p id="functions"></p>
+    <p id="example1"></p>
+    <p id="example2"></p>
+
+
+    <script>
+        // a function is a piece of code designed to perform a specific task
+        // a function is executed when invoked
+        // function keyword is used to begin a function
+        // whatever you pass into the parentesis is a parameter
+        // when you return a function, the javascript code will return to execute
+        // the code following the invoking of the function
+        // the return value is returned back to the caller.
+
+        function myApps(x1, x2) {
+            return x1 * x2;
+        }
+
+        document.getElementById("functions").innerHTML = myApps(4, 3);
+
+        myFunction()
+        function myFunction() {
+            let shoeName = "Gucci";
+            document.getElementById("example1").innerHTML = typeof shoeName + " " + shoeName;
+        }
+
+        document.getElementById("example2").innerHTML = typeof shoeName;
+
+    </script>
+</body>
+</html>

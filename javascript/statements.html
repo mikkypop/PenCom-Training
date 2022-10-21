@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement in Javascript</title>
+</head>
+<body>
+    <!-- 
+        Statement are used in javascript to control program flow.
+        Javascript statements are composed of 
+        Values, Operators, Expressions, Keywords, Comments
+    -->
+
+    <p id="statements"></p>
+
+    <script>
+        let a, b, c; //statement
+        a = 6;
+        b = 3;
+        c = a + b;
+
+        // To display the arithmetic operation
+        document.getElementById("statements").innerHTML = "The value of c is " + c + "!";
+
+        /*
+        var - declares a variable
+        let - let also declare and can assign value to the variable at the same time
+        const - declares a block constant
+        if - makes a block of rules or statements to be executed if a condition is satisfied
+        switch - makes a block of statement to be excuted in different cases
+        for loop - makes a block of statements to be executed in a loop
+            these loops  are used in ATMS
+            for loops are composed of three methods
+            operations
+            assignment
+            increment/decrease: for(let i = 0; i < 10; ++i)
+        function - declares a function
+        return - exits a function
+        try - is an error handling block
+
+        */
+
+        for(let i = 0; i < 10; ++i) {
+            console.log(i);
+        }
+        
+    </script>
+</body>
+</html>
