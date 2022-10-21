@@ -1,0 +1,17 @@
+/* 
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* 
+--sampe-color
+represents a variable name which we assign a color to 
+*/
+:root {
+    --our-purple: rgb(100,14,76);
+    --font-sm: 2rem;
+    --product-fonts: 'Open Sans', sans-serif;
+    --font-lucida: 'Courier New', Courier, monospace;
+
+}

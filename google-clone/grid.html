@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" />,
+</head>
+
+<body>
+    <main class="margin">
+        <p class="example">This is an example</p>
+        <div class="grid">
+            <div class="box">Hello</div>
+            <div class="box">Hello</div>
+            <div class="box">Hello</div>
+        </div>
+    </main>
+    <style>
+        .margin {
+            margin: 3rem
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .example {
+            font-size: var(--font-sm);
+            font-family: var(--product-fonts);
+        }
+
+        .box {
+            border: 4px solid;
+            padding: 2rem;
+            background-color: var(--our-purple);
+            color: white;
+            border-radius: 1rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                background-color: red;
+            }
+
+        }
+    </style>
+</body>
+
+</html>
