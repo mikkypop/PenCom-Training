@@ -1,0 +1,40 @@
+/* Stylesheet */
+
+:root {
+    --white: whitesmoke;
+    --green: rgb(77, 205, 77);
+    --font-lg: 2rem;
+}
+
+
+/* Universal selector (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--white);
+    color: var(--green);
+}
+
+.Game {
+    display: flex;
+    flex-direction: column;
+    /* viewport height and width */
+    height: 100vh; 
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    font-size: var(--font-lg);
+    z-index: : 2;;
+}
+
+.score {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+}
