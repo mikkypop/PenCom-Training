@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,47 @@
     <link rel="stylesheet" href="app.css" />
     <title>RPS Game</title>
 </head>
+
 <body>
-    <section class="Game">
-        <div class="title">
-            <div class="score">
-                <div class="playerScore">
-                    <h3>Player</h3>
-                    <p class="player-count count"></p>
-                </div>
-                <div class="computerScore">
-                    <h3>Computer</h3>
-                    <p class="computer-count count"></p>
-                </div>
+    <section class="game">
+        <!--Title -->
+        <div class="title">Rock Paper Scissor</div>
+
+        <!--Display Score of player and computer -->
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+
             </div>
-            <div class="move">Choose your moves:</div>
-            <div class="moveLeft">
-                Moves Remaining: 0
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+
             </div>
-            <div class="options">
-                <div class="rock"></div>
-                <div class="paper"></div>
-                <div class="scissors"></div>
-            </div>
-            <div class="result"></div>
-            <button class="reload"></button>
         </div>
-        
+
+        <div class="move">Choose your move</div>
+
+        <!--Number of moves left before game ends -->
+        <div class="movesleft">Moves Left: 10 </div>
+
+        <!--Options available to player to play game -->
+        <div class="options">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissors</button>
+        </div>
+
+        <!--Final result of game -->
+        <div class="result"></div>
+
+        <!--Reload the game -->
+        <button class="reload"></button>
+
     </section>
 
     <script src="app.js"></script>
 </body>
+
 </html>
