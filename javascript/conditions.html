@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions in Javascript</title>
+</head>
+<body>
+    <!-- IF condition -->
+
+    <p>Display hello if the hour is less than 18:00</p>
+    <p id="if-statements"></p>
+    <script>
+        if (new Date().getHours() < 17) {
+            document.getElementById("if-statements").innerHTML = "Hello!";
+        }
+    </script>
+    <!-- An example of IF and ELSE statement -->
+    <p>This is for the if and else statement.</p>
+    <p id="demo-if-else">This is for the if and else statement.</p>
+    <script>
+        const hour = new Date().getHours();
+        var greeting;
+
+        if (hour < 17) {
+            greeting = "Hello";
+        }
+        else {
+            greeting = "I will not greet you";
+        }
+
+        document.getElementById("demo-if-else").innerHTML = greeting;
+    </script>
+
+    <p>This is one of the exampls to explain if and elseif statements</p>
+    <p id="lase-example"></p>
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+
+        if (time < 11) {
+            greeting = "Good Day!";
+        } else if (time > 20) {
+            greeting = "Good day, my friend";
+        } else {
+            greeting = "I cannot greet you, I am AFRAID.";
+        }
+        document.getElementById("last-example").innerHTML = greeting;
+    </script>
+</body>
+</html>
